@@ -12,6 +12,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * When you create your own branch, add your name as a modifier.
  *
  * @author dancye & Peter Wyroba
+ * Modified Feb. 7, 2021
  */
 public class Card {
 
