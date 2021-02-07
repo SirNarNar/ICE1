@@ -20,7 +20,7 @@ public class CardTrick {
         Scanner k = new Scanner(System.in);
 
         Card[] magicHand = new Card[7];
-        Card userCard = new Card();
+        //Card userCard = new Card();
         Card luckyCard = new Card();
         
         luckyCard.setValue(1);
@@ -33,33 +33,33 @@ public class CardTrick {
             magicHand[i] = c;
         }
 
-        System.out.print("Enter your card value(Ace = 1, Jack = 11, Queen =12, King = 13): ");
-        userCard.setValue(k.nextInt());
-        System.out.print("Enter your suit value(Hearts, Diamonds, Spades, Clubs): ");
-        userCard.setSuit(k.next());
+        //System.out.print("Enter your card value(Ace = 1, Jack = 11, Queen =12, King = 13): ");
+        //userCard.setValue(k.nextInt());
+        //System.out.print("Enter your suit value(Hearts, Diamonds, Spades, Clubs): ");
+        //userCard.setSuit(k.next());
 
-        if ((magicHand[0].getSuit().equals(userCard.getSuit())) && (magicHand[0].getValue() == userCard.getValue())) {
-            System.out.println("Your card is in the magic hand");
+        if ((magicHand[0].getSuit().equals(luckyCard.getSuit())) && (magicHand[0].getValue() == luckyCard.getValue())) {
+            System.out.println("You won!");
         } else {
-            if ((magicHand[1].getSuit().equals(userCard.getSuit())) && (magicHand[1].getValue() == userCard.getValue())) {
-                System.out.println("Your card is in the magic hand");
+            if ((magicHand[1].getSuit().equals(luckyCard.getSuit())) && (magicHand[1].getValue() == luckyCard.getValue())) {
+                System.out.println("You won!");
             } else {
-                if ((magicHand[2].getSuit().equals(userCard.getSuit())) && (magicHand[2].getValue() == userCard.getValue())) {
-                    System.out.println("Your card is in the magic hand");
+                if ((magicHand[2].getSuit().equals(luckyCard.getSuit())) && (magicHand[2].getValue() == luckyCard.getValue())) {
+                    System.out.println("You won!");
                 } else {
-                    if ((magicHand[3].getSuit().equals(userCard.getSuit())) && (magicHand[3].getValue() == userCard.getValue())) {
-                        System.out.println("Your card is in the magic hand");
+                    if ((magicHand[3].getSuit().equals(luckyCard.getSuit())) && (magicHand[3].getValue() == luckyCard.getValue())) {
+                        System.out.println("You won!");
                     } else {
-                        if ((magicHand[4].getSuit().equals(userCard.getSuit())) && (magicHand[4].getValue() == userCard.getValue())) {
-                            System.out.println("Your card is in the magic hand");
+                        if ((magicHand[4].getSuit().equals(luckyCard.getSuit())) && (magicHand[4].getValue() == luckyCard.getValue())) {
+                            System.out.println("You won!");
                         } else {
-                            if ((magicHand[5].getSuit().equals(userCard.getSuit())) && (magicHand[5].getValue() == userCard.getValue())) {
-                                System.out.println("Your card is in the magic hand");
+                            if ((magicHand[5].getSuit().equals(luckyCard.getSuit())) && (magicHand[5].getValue() == luckyCard.getValue())) {
+                                System.out.println("You won!");
                             } else {
-                                if ((magicHand[6].getSuit().equals(userCard.getSuit())) && (magicHand[6].getValue() == userCard.getValue())) {
-                                    System.out.println("Your card is in the magic hand");
+                                if ((magicHand[6].getSuit().equals(luckyCard.getSuit())) && (magicHand[6].getValue() == luckyCard.getValue())) {
+                                    System.out.println("You won!");
                                 } else {
-                                    System.out.println("Your card was not in the magic hand.");
+                                    System.out.println("You lost.");
                                 }
                             }
                         }
